@@ -6,12 +6,21 @@
 
     Room.all = rooms;
 
+    Room.add = function(room) {
+      var list = $firebaseArray(ref);
+         $add('rooms');
+    }
+
+
     return Room;
   }
   var app = angular.module('bloc-chat', []);
 app.controller('RoomCtrl', function($scope) {
     //array of objects retrieved by the all method
+    $scope.all
 });
+
+<div class="Rooms" ng-repeat="rooms in Room.all"> //not sure if correct and where to put it
 
   angular
     .module('blocChat')
