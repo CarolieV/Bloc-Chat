@@ -6,6 +6,12 @@
 
     Room.all = rooms;
 
+    Room.add = function(room) {
+      var list = $firebaseArray(ref);
+         $add('rooms');
+    }
+
+
     return Room;
   }
   var app = angular.module('bloc-chat', []);
