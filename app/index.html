@@ -21,32 +21,21 @@
           <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
 
           <!-- FireBase -->
-               <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
                <!-- AngularFire -->
                <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
 
                 <!-- AngularUI Bootstrap -->
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
                ...
-
-<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+                <!--Usernames-->
+                <script>https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-cookies.js</script>
+                <script src="path/to/angular.js"></script>
+                <script src="path/to/angular-cookies.js"></script>
 <script>
     var myFirebase = new Firebase('https://bloc-chat-fa1ac.firebaseio.com/'); var usernameInput = document.querySelector('#username');
-    var textInput = document.querySelector('#text');
-    var postButton = document.querySelector('#post');
 
-    postButton.addEventListener("click", function() {
-      var msgUser = usernameInput.value;
-      var msgText = textInput.value;
-      postButton.addEventListener("click", function() {
-     var msgUser = usernameInput.value;
-     var msgText = textInput.value;
-     myFirebase.push({username:msgUser, text:msgText});
-     textInput.value = "";
-   });
-</script>
-</script>
-<script>
+
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyB_Jfv7gqfrj4TVSOM-_8PCjWswfu2i2B8",
