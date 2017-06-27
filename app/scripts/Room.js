@@ -20,7 +20,9 @@ app.controller('RoomCtrl', function($scope) {
     $scope.all
 });
 
-<div class="Rooms" ng-repeat="rooms in Room.all"> //not sure if correct and where to put it
+<div class="Rooms" ng-repeat="rooms in Room.all">
+</div>
+ //not sure if correct and where to put it
 
   angular
     .module('blocChat')
